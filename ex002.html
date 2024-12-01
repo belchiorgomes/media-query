@@ -25,8 +25,10 @@
             padding: 18px;
             background-color: white;
             margin: 20px auto;
+            /*
             resize: horizontal;
             overflow: hidden;
+            */
         }
 
         main > nav{
@@ -63,10 +65,32 @@
         }
 
         @media print{
+            body::after{
+                content: 'Pagina criada por.';
+            }
             nav{
                 display: none;
             }
         }
+
+        @media (max-width: 450px){
+            main > nav ul{
+                flex-direction: column;
+            }
+
+            main > nav ul li{
+                flex-basis: 100%;
+                height: auto;
+            }
+        }
+
+        /*
+        @media (orientation: landscape){
+            main{
+                background-color: #c4a6a6;
+            }
+        }
+        */
     </style>
 </head>
 <body>
