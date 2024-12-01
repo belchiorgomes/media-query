@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #c2c2c2;
+        }
+
+        nav, header, section, h2, p{
+            margin-block: 12px;
+        }
+
+        main{
+            max-width: 70vw;
+            border-radius: 18px;
+            padding: 18px;
+            background-color: white;
+            margin: 20px auto;
+            resize: horizontal;
+            overflow: hidden;
+        }
+
+        main > nav{
+            width: 100%;
+        }
+
+        main > nav ul{
+            list-style-type: none;
+            display: flex;
+            gap: 12px;
+        }
+
+        main > nav ul li{
+            flex-basis: auto;
+            background-color: black;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        main > nav ul li a{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+
+        main > header{
+            width: 100%;
+        }
+
+        main > header h1{
+            font-size: 2.8em;
+        }
+
+        @media print{
+            nav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Link 01</a></li>
+                <li><a href="#">Link 02</a></li>
+                <li><a href="#">Link 03</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Midia Query</h1>
+        </header>
+
+        <section>
+            <h2>titulo da seção</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eius adipisci? Ex delectus ipsum quia nisi accusantium, natus, nostrum magni cumque officiis exercitationem alias excepturi. Praesentium neque soluta inventore aperiam?
+                Quo aliquid accusantium quibusdam? Est minus pariatur doloremque, architecto nisi quia quisquam reprehenderit enim laboriosam perspiciatis non corrupti fugit laudantium eos dolore aspernatur dignissimos dolorem sed quam, eum aliquid. Maiores.
+                Rerum aliquam, quod dicta eligendi facilis labore debitis expedita voluptates sed ipsa sint placeat reiciendis soluta nam voluptatibus exercitationem? Repudiandae praesentium explicabo necessitatibus culpa voluptate optio modi unde, facilis laudantium.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
