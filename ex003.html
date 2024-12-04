@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css clamp()</title>
+    <style>
+        html{
+            background-color: antiquewhite;
+        }
+
+        main{
+            width: 80vw;
+            background-color: white;
+            padding: 8px;
+            border-radius: 8px;
+            resize: horizontal;
+        }
+
+        h1{
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Titulo da Pagina</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eaque optio fugit eligendi doloremque illo soluta, nesciunt minima ipsa, dicta, praesentium quibusdam molestiae aperiam debitis quam. Temporibus ab iure deserunt!
+        </p>
+    </main>
+</body>
+</html>
