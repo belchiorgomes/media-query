@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css clamp()</title>
     <style>
-        html{
-            background-color: antiquewhite;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, p{
+            font-size: clamp(1rem, 4.5vw, 3rem);
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        aside{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            height: 100%;
+            line-height: 100vh;
+            padding: 10px;
+            width: clamp(50px, 40vw, 200px);
+            text-align: center;
         }
 
         main{
-            width: 80vw;
-            background-color: white;
-            padding: 8px;
-            border-radius: 8px;
-            resize: horizontal;
-        }
-
-        h1{
-            font-size: clamp(2rem, 5vw, 3rem);
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <aside>Aside</aside>
     <main>
         <h1>Titulo da Pagina</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eaque optio fugit eligendi doloremque illo soluta, nesciunt minima ipsa, dicta, praesentium quibusdam molestiae aperiam debitis quam. Temporibus ab iure deserunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam neque, inventore corrupti rerum voluptatibus minus, eos explicabo illo veritatis debitis quasi, quo non voluptatem pariatur aperiam optio assumenda officiis.
         </p>
     </main>
 </body>
